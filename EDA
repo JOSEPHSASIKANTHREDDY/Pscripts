@@ -1,0 +1,5 @@
+import pandas as pd
+import zipfile
+
+zf = zipfile.ZipFile('C:/Users/Analytics Vidhya/Desktop/test.zip') # having First.csv zipped file.
+df = pd.read_csv(zf.open('First.csv'))
